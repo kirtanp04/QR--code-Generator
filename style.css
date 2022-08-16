@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.h1{
+    font: bolder;
+    font-family: "Audiowide", sans-serif;
+    font-size: 35px;
+}
+.container{
+    width: 100%;
+    background-color: rgb(130, 175, 243);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.box{
+    width: 1000px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input{
+    width: 400px;
+    height: 40px;
+    padding: 15px;
+    font-size: 22px;
+    margin: 30px;
+    text-align: center;
+    background-color:rgb(243, 232, 232) ;
+    border-radius: 7px;
+    border: 2px solid rgb(235, 225, 225);
+    outline: none;
+}
+
+#input::placeholder{
+    color: rgb(243, 78, 78);
+}
+
+.button{
+    font-size: 15px;
+    padding: 8px 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 8.4s;
+    border-radius: 15px;
+    background-color: rgb(32, 29, 29);
+    border: 2px solid white;
+    color: white;
+    outline: none;
+}
+
+#loading{
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    border: 6px solid rgb(77, 75, 75);
+    border-top: 5px solid white;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
